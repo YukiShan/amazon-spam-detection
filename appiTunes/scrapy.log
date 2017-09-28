@@ -1,0 +1,104 @@
+2017-01-18 00:45:09 [scrapy.utils.log] INFO: Scrapy 1.3.0 started (bot: iTunes Spider)
+2017-01-18 00:45:09 [scrapy.utils.log] INFO: Overridden settings: {'NEWSPIDER_MODULE': 'appiTunes.spiders', 'DEPTH_LIMIT': 4, 'SPIDER_MODULES': ['appiTunes.spiders'], 'RETRY_HTTP_CODES': [500, 503, 504, 400, 403, 404, 408], 'BOT_NAME': 'iTunes Spider', 'COOKIES_ENABLED': False, 'RETRY_TIMES': 10, 'DEPTH_PRIORITY': 1, 'LOG_LEVEL': 'INFO', 'DOWNLOAD_DELAY': 0.25}
+2017-01-18 00:45:09 [scrapy.middleware] INFO: Enabled extensions:
+['scrapy.extensions.logstats.LogStats',
+ 'scrapy.extensions.telnet.TelnetConsole',
+ 'scrapy.extensions.corestats.CoreStats']
+2017-01-18 00:45:09 [py.warnings] WARNING: /root/appiTunes/appiTunes/middlewares.py:14: ScrapyDeprecationWarning: Module `scrapy.log` has been deprecated, Scrapy now relies on the builtin Python library for logging. Read the updated logging entry in the documentation to learn more.
+  from scrapy import log
+
+2017-01-18 00:45:09 [scrapy.middleware] INFO: Enabled downloader middlewares:
+['scrapy.downloadermiddlewares.retry.RetryMiddleware',
+ 'scrapy.downloadermiddlewares.httpauth.HttpAuthMiddleware',
+ 'scrapy.downloadermiddlewares.downloadtimeout.DownloadTimeoutMiddleware',
+ 'appiTunes.middlewares.RandomUserAgent',
+ 'scrapy.downloadermiddlewares.defaultheaders.DefaultHeadersMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.MetaRefreshMiddleware',
+ 'scrapy.downloadermiddlewares.httpcompression.HttpCompressionMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.RedirectMiddleware',
+ 'scrapy.downloadermiddlewares.stats.DownloaderStats']
+2017-01-18 00:45:09 [scrapy.middleware] INFO: Enabled spider middlewares:
+['scrapy.spidermiddlewares.httperror.HttpErrorMiddleware',
+ 'scrapy.spidermiddlewares.offsite.OffsiteMiddleware',
+ 'scrapy.spidermiddlewares.referer.RefererMiddleware',
+ 'scrapy.spidermiddlewares.urllength.UrlLengthMiddleware',
+ 'appiTunes.middlewares.iTunesDepthMiddleware',
+ 'appiTunes.middlewares.iTunesMaxPageMiddleware']
+2017-01-18 00:45:10 [scrapy.middleware] INFO: Enabled item pipelines:
+['appiTunes.pipelines.AppleMongoDBPipeline']
+2017-01-18 00:45:10 [scrapy.core.engine] INFO: Spider opened
+2017-01-18 00:45:10 [scrapy.extensions.logstats] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2017-01-18 00:45:10 [appiTunes] INFO: Parsing app info: 1111479706
+2017-01-18 00:45:10 [appiTunes] INFO: Parsing app reviews: 1111479706  p1
+2017-01-18 00:45:11 [appiTunes] INFO: Parsing review info by the same reviewer: 425983469  p1
+2017-01-18 00:45:12 [appiTunes] INFO: Parsing review info by the same reviewer: 175729443  p1
+2017-01-18 00:45:12 [appiTunes] INFO: Parsing review info by the same reviewer: 519930943  p1
+2017-01-18 00:45:13 [appiTunes] INFO: Parsing review info by the same reviewer: 178648137  p1
+2017-01-18 00:45:13 [appiTunes] INFO: Parsing review info by the same reviewer: 278831633  p1
+2017-01-18 00:45:13 [appiTunes] INFO: Aborting unavailable reviewer page: https://itunes.apple.com/WebObjects/MZStore.woa/wa/viewUsersUserReviews?userProfileId=278831633&page=1&sort=14
+2017-01-18 00:45:13 [appiTunes] INFO: Parsing review info by the same reviewer: 176774508  p1
+2017-01-18 00:45:13 [appiTunes] INFO: Finishing crawling reviewer pages: https://itunes.apple.com/WebObjects/MZStore.woa/wa/viewUsersUserReviews?userProfileId=176774508&page=1&sort=14
+2017-01-18 00:45:13 [appiTunes] INFO: Parsing review info by the same reviewer: 539049342  p1
+2017-01-18 00:45:13 [appiTunes] INFO: Finishing crawling reviewer pages: https://itunes.apple.com/WebObjects/MZStore.woa/wa/viewUsersUserReviews?userProfileId=539049342&page=1&sort=14
+2017-01-18 00:45:14 [appiTunes] INFO: Parsing review info by the same reviewer: 532222512  p1
+2017-01-18 00:45:15 [appiTunes] INFO: Parsing review info by the same reviewer: 469010833  p1
+2017-01-18 00:45:15 [appiTunes] INFO: Parsing review info by the same reviewer: 420413108  p1
+2017-01-18 00:45:15 [appiTunes] INFO: Parsing apps related to: 1111479706
+2017-01-18 00:45:15 [appiTunes] INFO: Parsing review info by the same reviewer: 30918729  p1
+2017-01-18 00:45:15 [appiTunes] INFO: Finishing crawling reviewer pages: https://itunes.apple.com/WebObjects/MZStore.woa/wa/viewUsersUserReviews?userProfileId=30918729&page=1&sort=14
+2017-01-18 00:45:16 [appiTunes] INFO: Parsing review info by the same reviewer: 442461646  p1
+2017-01-18 00:45:16 [appiTunes] INFO: Parsing review info by the same reviewer: 492569249  p1
+2017-01-18 00:45:17 [appiTunes] INFO: Parsing review info by the same reviewer: 148488610  p1
+2017-01-18 00:45:17 [appiTunes] INFO: Parsing review info by the same reviewer: 152329119  p1
+2017-01-18 00:45:17 [appiTunes] INFO: Parsing review info by the same reviewer: 436057115  p1
+2017-01-18 00:45:17 [appiTunes] INFO: Parsing review info by the same reviewer: 509599038  p1
+2017-01-18 00:45:17 [appiTunes] INFO: Parsing review info by the same reviewer: 377035399  p1
+2017-01-18 00:45:18 [appiTunes] INFO: Parsing review info by the same reviewer: 412928603  p1
+2017-01-18 00:45:18 [appiTunes] INFO: Parsing review info by the same reviewer: 515429345  p1
+2017-01-18 00:45:18 [scrapy.core.scraper] ERROR: Spider error processing <GET https://itunes.apple.com/WebObjects/MZStore.woa/wa/viewUsersUserReviews?userProfileId=515429345&page=1&sort=14> (referer: https://itunes.apple.com/us/rss/customerreviews/page=1/id=1111479706/sortBy=mostRecent/xml)
+Traceback (most recent call last):
+  File "/usr/lib/python2.7/site-packages/scrapy/utils/defer.py", line 102, in iter_errback
+    yield next(it)
+  File "/usr/lib/python2.7/site-packages/scrapy/spidermiddlewares/offsite.py", line 29, in process_spider_output
+    for x in result:
+  File "/usr/lib/python2.7/site-packages/scrapy/spidermiddlewares/referer.py", line 22, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "/usr/lib/python2.7/site-packages/scrapy/spidermiddlewares/urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "/root/appiTunes/appiTunes/middlewares.py", line 54, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "/root/appiTunes/appiTunes/middlewares.py", line 85, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "/root/appiTunes/appiTunes/spiders/iTunes_apps_spider.py", line 283, in parse_rvwer_profile_page
+    startIdx = rvwer_page_title.find('by ')
+AttributeError: 'NoneType' object has no attribute 'find'
+2017-01-18 00:45:18 [appiTunes] INFO: Parsing review info by the same reviewer: 515096458  p1
+2017-01-18 00:45:19 [appiTunes] INFO: Parsing review info by the same reviewer: 457670030  p1
+2017-01-18 00:45:19 [appiTunes] INFO: Parsing review info by the same reviewer: 491674650  p1
+2017-01-18 00:45:19 [appiTunes] INFO: Parsing review info by the same reviewer: 216133797  p1
+2017-01-18 00:45:19 [appiTunes] INFO: Finishing crawling reviewer pages: https://itunes.apple.com/WebObjects/MZStore.woa/wa/viewUsersUserReviews?userProfileId=216133797&page=1&sort=14
+2017-01-18 00:45:20 [appiTunes] INFO: Parsing app info: 1111564961
+2017-01-18 00:45:20 [appiTunes] INFO: Parsing review info by the same reviewer: 400237612  p1
+2017-01-18 00:45:20 [appiTunes] INFO: Parsing app info: 1128337665
+2017-01-18 00:45:20 [appiTunes] INFO: Index does not exist!
+2017-01-18 00:45:20 [appiTunes] INFO: Parsing app info: 1101079221
+2017-01-18 00:45:20 [appiTunes] INFO: Index does not exist!
+2017-01-18 00:45:20 [appiTunes] INFO: Parsing app info: 1115155662
+2017-01-18 00:45:20 [appiTunes] INFO: Index does not exist!
+2017-01-18 00:45:20 [appiTunes] INFO: Index does not exist!
+2017-01-18 00:45:21 [appiTunes] INFO: Parsing app info: 1114433859
+2017-01-18 00:45:21 [appiTunes] INFO: Parsing app info: 1111508997
+2017-01-18 00:45:21 [appiTunes] INFO: Parsing app info: 1097021419
+2017-01-18 00:45:21 [appiTunes] INFO: Index does not exist!
+2017-01-18 00:45:21 [appiTunes] INFO: Index does not exist!
+2017-01-18 00:45:22 [appiTunes] INFO: Parsing app info: 1111567068
+2017-01-18 00:45:22 [appiTunes] INFO: Parsing app info: 1104960083
+2017-01-18 00:45:22 [appiTunes] INFO: Parsing review info by the same reviewer: 505962538  p1
+2017-01-18 00:45:22 [appiTunes] INFO: Parsing app info: 1125345827
+2017-01-18 00:45:22 [appiTunes] INFO: Index does not exist!
+2017-01-18 00:45:22 [appiTunes] INFO: Index does not exist!
+2017-01-18 00:45:23 [appiTunes] INFO: Parsing apps by the same developer: 1080230537
+2017-01-18 00:45:23 [appiTunes] INFO: Parsing review info by the same reviewer: 252036915  p1
+2017-01-18 00:45:23 [scrapy.crawler] INFO: Received SIGINT, shutting down gracefully. Send again to force 
+2017-01-18 00:45:23 [scrapy.core.engine] INFO: Closing spider (shutdown)
+2017-01-18 00:45:23 [scrapy.crawler] INFO: Received SIGINT twice, forcing unclean shutdown
